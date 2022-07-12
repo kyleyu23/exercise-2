@@ -107,5 +107,7 @@
       }
     }
   },
-  "defaultProject": "exercise-2"
+  "cli": {
+    "analytics": false
+  }
 }

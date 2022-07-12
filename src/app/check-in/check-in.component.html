@@ -1,0 +1,15 @@
+<div class="container">
+  <section class="blue-text">Oak Street Health</section>
+  <section class="blue-text">Hi there, lets confirm it's you</section>
+  <section class="grey-text">Enter the patient's info to check-in</section>
+
+  <form [formGroup]="checkInForm" (ngSubmit)="onSubmit()">
+    <label for="dateOfBirth">Patient's date of birth</label>
+    <input id="dateOfBirth" type="date" formControlName="dateOfBirth" />
+
+    <label for="zipCode">Patient's Zip Code (5 digits)</label>
+    <input id="zipCode" type="text" formControlName="zipCode" />
+
+    <button type="submit">Continue</button>
+  </form>
+</div>
